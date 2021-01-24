@@ -242,7 +242,7 @@ export default class Register extends Component {
             maxLength="8"
           />
             <span></span>
-            <label> Your userPass </label>
+            <label> Your userPin </label>
           </div>
 
           <button

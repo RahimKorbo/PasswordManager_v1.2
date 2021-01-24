@@ -61,14 +61,17 @@ export default class Dashboard extends React.Component {
             rows: items
         });
     }
-    handleItemDeleted(i) {
+    handleItemDeleted(i,event) {
         var items = this.state.rows;
-
+        alert("Items to be deleted"+i+"\n items--"+items);
         items.splice(i, 1);
 
         this.setState({
             rows: items
         });
+
+        event.preventDefault();
+
     }
 
     handleClick() {
